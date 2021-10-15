@@ -91,7 +91,8 @@ a {
     cursor: pointer;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-item.active {
     color: var(--text-primary);
     background-color: var(--alpha-bg);
 }
