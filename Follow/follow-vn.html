@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="https://static-zmp3.zadn.vn/skins/zmp3-v5.2/images/icon_zing_mp3_60.png" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- <link rel="stylesheet" href="./assets/css/style.css" /> -->
+    <link rel="stylesheet" href="./assets/css/follow.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/responsive-follow.css" /> -->
+    <title>DreamTeam</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sidebar hide-on-mobile">
+            <div class="sidebar-logo">
+                <a href="#">
+                    <img src="../assets/img/home/logo-dark.svg" alt="" class="logo-img hide-on-t-m" />
+                    <img src="../assets/img/icon_zing_mp3_60.f6b51045.svg" alt="" class="logo-img-t-m" />
+                </a>
+            </div>
+
+            <div class="navbar">
+                <div class="nav-item active">
+                    <i class="nav-item-icon fas fa-music"></i>
+                    <a href="../index.html" class="nav-item-text hide-on-t-m">Cá Nhân</a
+            >
+          </div>
+
+          <div class="nav-item">
+            <i class="nav-item-icon fas fa-map-marked-alt"></i>
+            <a href="" class="nav-item-text hide-on-t-m">Khám Phá</a>
+                </div>
+
+                <div class="nav-item">
+                    <i class="nav-item-icon fas fa-globe"></i>
+                    <a href="" class="nav-item-text hide-on-t-m">#zingchart</a>
+                </div>
+
+                <div class="nav-item">
+                    <i class="nav-item-icon fas fa-podcast"></i>
+                    <a href="#" class="nav-item-text hide-on-t-m">Radio</a>
+                    <figure class="image tag is-48x48">
+                        <img src="https://zjs.zadn.vn/zmp3-desktop/dev/147506/static/media/live-tag.e25dd240.svg" alt="" />
+                    </figure>
+                </div>
+
+                <div class="nav-item">
+                    <i class="nav-item-icon ri-album-line"></i>
+                    <a href="" class="nav-item-text hide-on-t-m">Theo Dõi</a>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="nav-item">
+                    <i class="nav-item-icon fas fa-headphones"></i>
+                    <a href="" class="nav-item-text hide-on-t-m">Nhạc Mới</a>
+                </div>
+
+                <div class="nav-item">
+                    <i class="nav-item-icon fas fa-th-large"></i>
+                    <a href="" class="nav-item-text hide-on-t-m">Thể Loại</a>
+                </div>
+                <div class="nav-item">
+                    <i class="nav-item-icon far fa-star"></i>
+                    <a href="" class="nav-item-text hide-on-t-m">Top 100</a>
+                </div>
+
+                <div class="nav-item">
+                    <i class="nav-item-icon ri-youtube-line"></i>
+                    <a href="" class="nav-item-text hide-on-t-m">MV</a>
+                </div>
+            </div>
+
+            <div class="vip-sidebar hide-on-t-m">
+                <p class="vip-heading">Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+                <button class="btn-buy-vip">MUA VIP</button>
+            </div>
+
+            <div class="line hide-on-t-m"></div>
+
+            <div class="new-playlist hide-on-t-m is-flex">
+                <p>
+                    <span class="new-playlist-icon">+</span>
+                    <span>Tạo playlist mới</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="player">
+            <header class="header">
+                <div class="header-left">
+                    <div class="header-btn hide-on-mobile">
+                        <i class="ri-arrow-left-line header-icon-prev"></i>
+                        <i class="ri-arrow-right-line header-icon-next"></i>
+                    </div>
+                    <div class="header-search is-flex">
+                        <i class="ri-search-line icon-search"></i>
+                        <input type="text" class="search-input" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV..." />
+                    </div>
+                </div>
+                <div class="header-user is-flex">
+                    <i class="ri-t-shirt-fill hide-on-mobile"></i>
+                    <i class="ri-upload-line hide-on-t-m"></i>
+                    <i class="ri-settings-5-line hide-on-mobile"></i>
+                    <img src="https://avatar.talk.zdn.vn/default.jpg" alt="" class="icon-user" />
+                </div>
+            </header>
+            <!--------- Begin Follow ======== ---------->
+            <div class="follow">
+                <div class="follow-header">
+                    <ul class="follow-heading">
+                        <li class="follow-header-list active">
+                            <div class="follow-header-link">
+                                <a href="#">Việt Nam</a>
+                            </div>
+                        </li>
+                        <li class="follow-header-list">
+                            <div class="follow-header-link">
+                                <a href="#">Us-Uk</a>
+                            </div>
+                        </li>
+                        <li class="follow-header-list">
+                            <div class="follow-header-link">
+                                <a href="#">K-pop</a>
+                            </div>
+                        </li>
+                        <li class="follow-header-list">
+                            <div class="follow-header-link">
+                                <a href="#">Hoa Ngữ</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="follow-sidebar">
+                    <div class="follow-img">
+                        <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/artists/v2/phao.png" alt="" />
+                    </div>
+                    <div class="follow-img">
+                        <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/artists/v2/chi-dan.png" alt="" />
+                    </div>
+                    <div class="follow-img">
+                        <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/artists/v2/justatee.png" alt="" />
+                    </div>
+                    <div class="follow-img">
+                        <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/artists/v2/mrsiro.png" alt="" />
+                    </div>
+                    <div class="follow-img">
+                        <img src="https://zmp3-static.zadn.vn/skins/zmp3-v6.1/images/artists/v2/trinh-thang-binh.png" alt="" />
+                    </div>
+                </div>
+                <div class="follow-content">
+                    <div class="follow-story">
+                        <div class="follow-story-left">
+                            <div class="follow-left">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/0/c/d/a/0cdaeed936e1bb3b6ff53ffba6aea21c.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Như Hexi</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>14 tháng 10 lúc 15:57</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Thương em mãi đi rồi mai em thưởng cho ❤️
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/81cc8fa7aae243bc1af3" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>100</span></i>
+
+                                        <i class="far fa-comment"><span>77</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-left">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/7/1/7121883aadcdad2230a7609785a10f3b_1468204133.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Kim Ny Ngọc</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>14 tháng 10 lúc 15:57</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Mọi người ơi xin hãy luôn yêu thương. Vì là kiếp sống luôn vô thương
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/6355223f077aee24b76b" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>100</span></i>
+
+                                        <i class="far fa-comment"><span>77</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-left">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/a/6/1/5/a6155b14048b4ec88b8c87cf956a8979.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Fanny Trần</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>13 tháng 10 lúc 16:57</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Ăn mít hay ăn à mà thuiiiiii 😂😂😂
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/19c5e1aec4eb2db574fa" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>6</span></i>
+
+                                        <i class="far fa-comment"><span>3</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-left">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/6/7/676c250bfb0a25358e7a62075e47416a_1511495598.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Akira Phan</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>13 tháng 10 lúc 17:27</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Trăm Năm Không Quên (Cover bby Akira Phan)
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/c4c4d2aef7eb1eb547fa" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>2</span></i>
+
+                                        <i class="far fa-comment"><span>1</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="follow-story-center">
+                            <div class="follow-center">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/e/e/4/b/ee4b84993ee8e824d1d62178e185a768.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Quốc Đại</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>14 tháng 10 lúc 17:57</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">😂</div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/efd212b937fcdea287ed" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>2</span></i>
+
+                                        <i class="far fa-comment"><span>0</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-center">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/4/7/47df045524442c38fffbd2b26865fea2_1491635120.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Yến Trang</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>13 tháng 10 lúc 12:27</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Trải qua bao nhiêu điều trong cuộc sống đã rèn giũa cho bạn "sẽ nói những điều cần nói, và im lặng khi những điều đó ko còn là mối bận tâm". Sông càng sâu càng tĩnh lặng 🙂
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/dca923c20687efd9b696" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"> <span>1k</span></i>
+
+                                        <i class="far fa-comment"><span>34</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-center">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/b/9/b9f57dc61e2baea3356698c554955d12_1497603844.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">P336 Band</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>12 tháng 10 lúc 12:27</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Người ta khổ tâm quá màa
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/bf37235c0619ef47b608" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"> <span>1254</span></i>
+
+                                        <i class="far fa-comment"><span>34</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-center">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/1/c16e285309bd8ddbd579a6e5027f5f36_1499240137.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Bằng Cường</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>11 tháng 10 lúc 12:27</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Hãy nhớ rằng im lặng... Đôi khi lại là câu trả lời tốt nhất !!!
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/75432c29096ce032b97d" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"> <span>54</span></i>
+
+                                        <i class="far fa-comment"><span>34</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="follow-story-right">
+                            <div class="follow-right">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/2/d/6/1/2d61242d058a36761db4b60c563a410d.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Masew</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>14 tháng 10 lúc 17:57</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Loại này hay loại nào hả đca ???
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/4728d940fc05155b4c14" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>17</span></i>
+
+                                        <i class="far fa-comment"><span>9</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-right">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/c/0/0/e/c00e39a892b3cbb0a87f1e87c0a583f7.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Thái Tuyết Trâm</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>13 tháng 10 lúc 17:57</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Người ta thường nhớ cái cần quên, và hay quên cái nên nhớ.
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/2d0873635626bf78e637" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>2</span></i>
+
+                                        <i class="far fa-comment"><span>0</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-right">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/1/1/b/1/11b17d39561fc90171cec785d976300c.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Phạm Trưởng</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>13 tháng 10 lúc 17:57</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        Mới có 18 tuổi mà ai cũng bảo em già 😜
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/3ca134ca118ff8d1a19e" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"><span>2</span></i>
+
+                                        <i class="far fa-comment"><span>0</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="follow-right">
+                                <div class="fl--top">
+                                    <div class="fl--header">
+                                        <div class="fl--header--left">
+                                            <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/a/f/2/2/af2221f166f8f9dfac19c90007f05926.jpg" alt="" />
+                                        </div>
+                                        <div class="fl--header--right">
+                                            <h3>
+                                                <a href="#">Da LAB</a>
+                                                <span>&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+                                                <span class="fl--care">Quan Tâm</span>
+                                            </h3>
+                                            <p>13 tháng 10 lúc 22:27</p>
+                                        </div>
+                                    </div>
+                                    <div class="fl--header--content">
+                                        GOKU TAKE MY ENERGY!!!
+                                    </div>
+                                </div>
+                                <div class="fl--center">
+                                    <div class="fl--center--content">
+                                        <img src="https://photo-zmedia-zmp3.zadn.vn/w512_png/fb40492b6c6e8530dc7f" alt="" />
+                                    </div>
+                                </div>
+                                <div class="fl--bottom">
+                                    <div class="fl--bottom--content">
+                                        <i class="far fa-heart"> <span>2</span></i>
+
+                                        <i class="far fa-comment"><span>0</span></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------- End Follow ---------->
+
+        <div class="playlist">
+            <div class="playlist-header is-flex">
+                <h3 class="playlist-heading is-flex">
+                    <span>Bài Hát</span>
+                    <i class="ri-arrow-right-s-line"></i>
+                </h3>
+                <div class="playlist-header-right is-flex">
+                    <button class="btn-upload hide-on-mobile is-flex">
+                <i class="ri-upload-line"></i>
+                <span>TẢI LÊN</span>
+              </button>
+                    <button class="btn-play-all is-flex">
+                <i class="ri-play-fill"></i>
+                <span>PHÁT TẤT CẢ</span>
+              </button>
+                </div>
+            </div>
+
+            <div class="playlist-body">
+                <div class="playlist-body-left hide-on-800">
+                    <div class="cd-playlist">
+                        <img src="../assets/img/home/icon-playing.gif" alt="" class="cd-gif" />
+                        <img src="../assets/img/home/music.jpg" alt="" class="cd-player" />
+                    </div>
+                </div>
+
+                <div class="songs-list">
+                    <div class="song is-flex">
+                        <div class="song-left is-flex">
+                            <div class="thumb">
+                                <i class="ri-play-fill icon-song-play"></i>
+                                <img src="../assets/img/home/icon-playing.gif" alt="" class="gif-playing" />
+                            </div>
+                            <div class="song-body">
+                                <h3 class="song-name">Tên Bài hát</h3>
+                                <p class="song-singer">Tên ca sĩ</p>
+                            </div>
+                        </div>
+                        <div class="time-total">
+                            <span>00:00</span>
+                        </div>
+                        <div class="song-option">
+                            <i class="ri-heart-3-fill icon-heart"></i>
+                            <i class="ri-more-fill"></i>
+                        </div>
+                    </div>
+
+                    <div class="song is-flex">
+                        <div class="song-left is-flex">
+                            <div class="thumb">
+                                <i class="ri-play-fill icon-song-play"></i>
+                                <img src="../assets/img/home/icon-playing.gif" alt="" class="gif-playing" />
+                            </div>
+                            <div class="song-body">
+                                <h3 class="song-name">Tên Bài hát</h3>
+                                <p class="song-singer">Tên ca sĩ</p>
+                            </div>
+                        </div>
+                        <div class="time-total">
+                            <span>00:00</span>
+                        </div>
+                        <div class="song-option">
+                            <i class="ri-heart-3-fill icon-heart"></i>
+                            <i class="ri-more-fill"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============Control============ -->
+    <div class="control">
+        <div class="control-left">
+            <div class="cd">
+                <img src="" alt="" class="cd-img" />
+                <div class="nodes-list">
+                    <span class="cd-node node-1">♫</span>
+                    <span class="cd-node node-2">♪</span>
+                    <span class="cd-node node-3">♭</span>
+                    <span class="cd-node node-4">♫</span>
+                    <span class="cd-node node-5">♪</span>
+                    <span class="cd-node node-6">♭</span>
+                </div>
+            </div>
+            <div class="cd-info">
+                <!-- <marquee width="100%" direction="left" behavior="scroll" scrolldelay="160"> -->
+                <p class="cd-name"></p>
+                <!-- </marquee> -->
+                <p class="cd-singer"></p>
+            </div>
+        </div>
+        <div class="control-center">
+            <div class="btn-control-list">
+                <div class="btn btn-hover btn-random hide-on-mobile">
+                    <i class="fas fa-random"></i>
+                </div>
+                <div class="btn btn-hover btn-prev hide-on-mobile">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-play">
+                    <i class="far fa-play-circle icon-play"></i>
+                    <i class="far fa-pause-circle icon-pause"></i>
+                </div>
+                <div class="btn btn-hover btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-hover btn-repeat hide-on-mobile">
+                    <i class="fas fa-redo"></i>
+                </div>
+            </div>
+            <div class="progress-bar">
+                <span class="time-left hide-on-mobile">00:00</span>
+                <div class="progress-line">
+                    <input id="progress" class="progress" type="range" value="0" step="0.1" min="0" max="100" />
+                    <div class="line-first"></div>
+                    <div class="line-current"></div>
+                    <div class="circle"></div>
+                </div>
+                <span class="time-right hide-on-mobile">00:00</span>
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+
+        <div class="control-right hide-on-mobile is-flex">
+            <i class="fab fa-youtube"></i>
+            <i class="fas fa-microphone-alt"></i>
+            <div class="volume is-flex">
+                <div class="volume-icon">
+                    <i class="fas fa-volume-mute icon-volume-mute"></i>
+                    <i class="fas fa-volume-up icon-volume-up active"></i>
+                </div>
+                <div class="progress-volume-bar">
+                    <input id="progress-volume" class="progress-volume" type="range" value="100" step="1" min="0" max="100" />
+                    <div class="line-volume"></div>
+                    <div class="line-volume-current"></div>
+                    <div class="circle-volume"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="control-on-mobile">
+        <div class="player-on-mobile">
+            <div class="control-top">
+                <div class="dashboard-on-mobile">
+                    <i class="ri-arrow-down-s-line mobile-icon-hide"></i>
+                    <header>
+                        <h4>Now playing:</h4>
+                        <h2 class="heading-on-mobile">String 57th & 9th</h2>
+                    </header>
+                </div>
+
+                <div class="cd-on-mobile">
+                    <div class="cd-thumb-on-mobile" style="background-image: url('./assets/img/masew.jpg')"></div>
+                </div>
+            </div>
+
+            <div class="control-bottom">
+                <div class="progress-bar">
+                    <span class="time-left">00:00</span>
+                    <div class="progress-line">
+                        <input id="progress" class="progress" type="range" value="0" step="0.1" min="0" max="100" />
+                        <div class="line-first"></div>
+                        <div class="line-current"></div>
+                        <div class="circle"></div>
+                    </div>
+                    <span class="time-right">00:00</span>
+                </div>
+
+                <div class="btn-control-list">
+                    <div class="btn btn-hover btn-random">
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <div class="btn btn-hover btn-prev">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+                    <div class="btn btn-play">
+                        <i class="far fa-play-circle icon-play"></i>
+                        <i class="far fa-pause-circle icon-pause"></i>
+                    </div>
+                    <div class="btn btn-hover btn-next">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="btn btn-hover btn-repeat">
+                        <i class="fas fa-redo"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audio-fake" src=""></audio>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
