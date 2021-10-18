@@ -1,0 +1,10 @@
+{
+  "editor.tabSize": 2,
+  "editor.renderWhitespace": "none",
+  "editor.insertSpaces": false,
+  "editor.definitionLinkOpensInPeek": true,
+  "editor.defaultFormatter": "vscode.html-language-features",
+  "editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.letterSpacing": 0.5
+}

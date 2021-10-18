@@ -1,23 +1,21 @@
-
 :root {
     --color-bg-main: #170f23;
     --color-bg-sidebar: #231b2e;
     --color-purple: #7200a1;
-    --text-secondary: hsla(0,0%,100%,0.5);
-    --text-secondaryy: hsla(0,0%,100%,0.2);
+    --text-secondary: hsla(0, 0%, 100%, 0.5);
+    --text-secondaryy: hsla(0, 0%, 100%, 0.2);
     --text-primary: #fff;
     --navigation-text: #dadada;
-    --alpha-bg: hsla(0,0%,100%,0.1);
+    --alpha-bg: hsla(0, 0%, 100%, 0.1);
     --layout-bg: #170f23;
 }
 
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 @keyframes animate {
-    0% { 
+    0% {
         opacity: 0;
     }
     50% {
@@ -41,10 +39,10 @@
 
 html {
     font-size: 14px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
-a{
+a {
     color: #fff;
     text-decoration: none;
     line-height: 46px;
@@ -79,7 +77,8 @@ a{
     display: none;
 }
 
-.nav-item.top100 {
+.nav-item.top100,
+.nav-item:hover {
     color: var(--text-primary);
     background-color: var(--alpha-bg);
     border-left: 2px solid var(--color-purple);
@@ -105,11 +104,11 @@ a{
     font-size: 18px;
 }
 
-.nav-item li:active .nav-item-profile{
+.nav-item li:active .nav-item-profile {
     color: red;
 }
 
-.tag{
+.tag {
     line-height: 0;
     margin-left: 8px;
     background-color: inherit;
@@ -126,7 +125,7 @@ a{
 .vip-sidebar {
     width: 200px;
     height: 110px;
-    background-image: linear-gradient(to right bottom, #5f4de6,#bc69d9);
+    background-image: linear-gradient(to right bottom, #5f4de6, #bc69d9);
     border-radius: 8px;
     padding: 12px;
     margin: 16px auto;
@@ -143,7 +142,7 @@ a{
 .btn-buy-vip {
     outline: none;
     border: none;
-    background-color:#ffdb00;
+    background-color: #ffdb00;
     height: 24px;
     width: 100px;
     margin-top: 16px;
@@ -152,7 +151,6 @@ a{
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
-    
 }
 
 .btn-buy-vip:hover {
@@ -177,6 +175,7 @@ a{
     cursor: pointer;
     opacity: 0.8;
 }
+
 
 /* =========================CD============================== */
 
@@ -223,13 +222,12 @@ a{
     top: -30px;
     left: 15px;
     animation: animate 2s linear infinite;
-
 }
 
 .node-6 {
     top: 20px;
     left: -20px;
-    animation: animate 3s linear infinite; 
+    animation: animate 3s linear infinite;
 }
 
 .node-4 {
@@ -273,7 +271,7 @@ a{
     font-size: 16px;
     font-weight: 600;
     overflow: hidden;
-    white-space: nowrap; 
+    white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 100px;
 }
@@ -313,7 +311,8 @@ a{
     display: none !important;
 }
 
-.icon-play:hover, .icon-pause:hover {
+.icon-play:hover,
+.icon-pause:hover {
     color: var(--color-purple);
 }
 
@@ -321,20 +320,21 @@ a{
     display: none !important;
 }
 
-.icon-play, .icon-pause {
-    font-size: 35px!important;
+.icon-play,
+.icon-pause {
+    font-size: 35px !important;
 }
 
-.btn-random.active i{
-    color: var(--color-purple)!important;
+.btn-random.active i {
+    color: var(--color-purple) !important;
 }
 
-.btn-repeat.active i{
-    color: var(--color-purple)!important;
+.btn-repeat.active i {
+    color: var(--color-purple) !important;
 }
 
 .btn-hover:hover {
-    background-color: var( --alpha-bg);
+    background-color: var(--alpha-bg);
     border-radius: 50%;
 }
 
@@ -351,10 +351,10 @@ a{
     width: 100%;
     height: 3px;
     margin: 0 10px;
-}  
+}
 
 .progress-line:hover .line-current,
-.progress-line:hover .line-first{
+.progress-line:hover .line-first {
     height: 6px;
 }
 
@@ -374,7 +374,7 @@ a{
 }
 
 .line-current {
-    width: 0.;
+    width: 0;
     height: 3px;
     position: absolute;
     top: 50%;
@@ -385,10 +385,10 @@ a{
 }
 
 .circle {
-    width: 12px; 
+    width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color:#fff;
+    background-color: #fff;
     position: absolute;
     top: 50%;
     left: 0;
@@ -414,7 +414,8 @@ a{
     z-index: 1000;
 }
 
-.time-left, .time-right {
+.time-left,
+.time-right {
     color: var(--text-secondary);
     font-size: 12px;
 }
@@ -440,15 +441,15 @@ a{
     display: inline-block;
 }
 
-.icon-volume-mute{
+.icon-volume-mute {
     display: none;
 }
 
-.volume-icon.mute .icon-volume-mute{
+.volume-icon.mute .icon-volume-mute {
     display: inline-block !important;
 }
 
-.volume-icon.mute .icon-volume-up{
+.volume-icon.mute .icon-volume-up {
     display: none !important;
 }
 
@@ -457,7 +458,7 @@ a{
     width: 100px;
     height: 3px;
     margin: 0 4px;
-}  
+}
 
 .line-volume {
     width: 100%;
@@ -482,10 +483,10 @@ a{
 }
 
 .circle-volume {
-    width: 12px; 
+    width: 12px;
     height: 12px;
     border-radius: 50%;
-    background-color:#fff;
+    background-color: #fff;
     position: absolute;
     top: 50%;
     left: calc(100% - 5px);
@@ -511,9 +512,11 @@ a{
     z-index: 1000;
 }
 
+
 /* .progress-volume-bar:hover .progress-volume, */
+
 .progress-volume-bar:hover .line-volume,
-.progress-volume-bar:hover .line-volume-current{
+.progress-volume-bar:hover .line-volume-current {
     height: 6px;
 }
 
@@ -526,7 +529,7 @@ a{
     background-color: #170f23;
     width: 85%;
     margin-left: 15%;
-}   
+}
 
 .header {
     position: fixed;
@@ -566,7 +569,7 @@ a{
 }
 
 .header-search {
-    background-color:#2f2739;
+    background-color: #2f2739;
     border-radius: 50px;
     width: 540px;
     padding: 0 12px;
@@ -594,9 +597,7 @@ a{
     font-size: 14px;
 }
 
-.header-user {
-
-}
+.header-user {}
 
 .header-user i {
     color: #dadada;
@@ -617,82 +618,160 @@ a{
     border-radius: 50%;
     cursor: pointer;
 }
-/* ===========Begin Background =============== */
 
-.user-profile{
-}
 
-.z-top100-home{
-    margin-left: calc(var(--padding-section)*-1);
-    width: calc(100% + var(--padding-section)*2);
+/* ==============Top 100========== */
+
+
+/*==========Background=============== */
+
+.z-top100-home {
+    margin-left: calc(var(--padding-section) * -1);
+    width: calc(100% + var(--padding-section) * 2);
     margin-top: -100px;
     padding-top: 100px;
     position: relative;
 }
 
-.z-top100-home .bg{
+.z-top100-home .bg {
     position: absolute;
     left: 0;
     right: 0;
     top: 100px;
-    height: 300px;
+    height: 700px;
 }
 
-.z-top100-home .bg-blur{
+.z-top100-home .bg-blur {
     background: url(https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.2/static/media/banner-100.33cafe6b.png) top/cover no-repeat;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }
 
-.z-top100-home .bg-alpha{
-    opacity: .9;
+.z-top100-home .bg-alpha {
+    opacity: 0.9;
     z-index: 0;
-    background-image: linear-gradient(180deg, var(--layout-bg),var(--layout-bg));
+    background-image: linear-gradient(180deg, var(--layout-bg), var(--layout-bg));
 }
 
-.z-top100-home .bg-alpha-1{
-    background-image: linear-gradient(180deg,transparent,transparent 50%,var(--layout-bg));
+.z-top100-home .bg-alpha-1 {
+    background-image: linear-gradient( 180deg, transparent, transparent 50%, var(--layout-bg));
 }
 
-.z-top100-home .bg-alpha, .z-top100-home .bg-alpha-1, .z-top100-home .bg-blur{
+.z-top100-home .bg-alpha,
+.z-top100-home .bg-alpha-1,
+.z-top100-home .bg-blur {
     position: absolute;
     top: 0;
     width: 100%;
     height: 100%;
 }
-/* ===========End Background =============== */
 
-/* ===========Begin Top100 =============== */
-
-.zm-section{
-    margin-top: 60px;
+.zm-section {
+    margin-top: 120px;
     margin-bottom: 90px;
 }
 
 
-img, video {
-    height: auto;
+/* ========End Background=========== */
+
+.all-top100 {
+    display: flex;
+    position: absolute;
+}
+
+.discover-item {
+    padding-left: 10px;
+    width: 16.66666%;
+    height: 200px;
+    text-align: center;
+}
+
+.top100-anh {
+    position: relative;
+}
+
+.top100-anh:hover .top100-item {
+    cursor: pointer;
+    opacity: 0.7;
+    /* transform: scale(1.1); */
+}
+
+.top100-anh:hover .action-top100 {
+    display: block;
+    opacity: 1 !important;
+}
+
+.top100-anh .action-top100:hover {
+    cursor: pointer;
+}
+
+.discover-item .top100-item {
+    border-radius: 50%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.top100-anh .action-top100 {
+    position: absolute;
+    z-index: 4;
+    color: #fff;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    display: none;
+}
+
+.top100-anh .action-top100 .far {
+    line-height: 32px;
+    font-size: 300%;
+    font-weight: 100;
+    width: 222px;
+    height: 32px;
+}
+
+.top100-anh .svg {
+    display: inline-block;
+    max-width: 100%;
+    position: absolute;
     width: 100%;
+    height: 100%;
+    z-index: 3;
+    transform: rotate(-90deg);
+    left: 0;
+}
+
+.svg-circle-bg,
+.svg-circle {
+    fill: none;
+}
+
+.zm-section .host {
+    overflow: hidden;
+    border-radius: 50%;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-55%, -55%);
+    z-index: 4;
+    /* height: 30%; */
+    width: 24%;
 }
 
 
-/* -------------Top100-list----------- */
+/* ========Content top100========= */
 
-.container_body--layout{
-    padding-top: 200px;
-}
-
-.top100-list-item-layout{
+.top100-list-item-layout {
     margin: 0 30px;
-    margin-top: 30px;
-
+    margin-top: 40%;
 }
 
-.top100-list-item-layout-ingredient{
+.top100-list-item-layout-ingredient {
     padding: 0 12px;
 }
 
-.top100-name-content{
+.top100-name-content {
     margin-top: 4px;
     font-size: 14px;
     font-weight: 600;
@@ -705,31 +784,46 @@ img, video {
     display: block;
 }
 
-.top100-name-content:hover {
-	cursor: pointer;
-	color: #7200a1;
-}
-
-.discover{
+.discover {
     display: flex;
     width: 100%;
     height: 1%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
+
 .content1 {
     align-items: center;
+    display: flex;
     text-align: left;
+    border-radius: 5px;
     padding-left: 22px;
-		font-size: 20px;
+}
+
+.content1 a:hover {
+    color: #7200a1;
+}
+
+.content1 a {
+    text-decoration: none;
+    font-size: 20px;
     color: #fff;
-    font-weight: 600;
+    margin-bottom: 16px;
+    font-weight: 700;
     text-transform: capitalize;
     display: block;
 }
 
+.top100-media-content {
+    padding: 0 0 16px;
+}
+
+.top100-media-left {
+    padding-left: 22px;
+    margin-right: 10px;
+}
+
 .top100-media-image {
     border-radius: 4px;
-
     /* display: block;
     position: relative;
     overflow: hidden;
@@ -740,7 +834,6 @@ img, video {
 .top100-media-image figure {
     border-radius: 5px;
     overflow: hidden;
-    
 }
 
 .is-50x50 {
@@ -748,92 +841,108 @@ img, video {
     height: 50px;
 }
 
-.top100-list-item-layout-ingredient .imgtop100{
+.top100-media-content {}
+
+.top100-subtitle {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-top: 10px;
+}
+
+.top100-media-content .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+.top100-list-item-layout-ingredient .imgradio {
     width: 100%;
     height: 100%;
     padding: 10px;
 }
-.imgtop100{
+
+.imgtop100 {
     border-radius: 20px;
 }
-.top100-list-item-layout-ingredient{
+
+.top100-list-item-layout-ingredient {
     width: 20%;
     margin-top: 10px;
 }
 
-.top100-action{
+.top100-action {
     position: relative;
     display: flex;
 }
 
-.top100-action:hover .imgtop100{
+.top100-action:hover .imgradio {
     cursor: pointer;
     opacity: 0.6;
 }
 
-.top100-action .action-top100{
-}
+.top100-action .action-top100 {}
 
 .top100-action:hover .action-top100,
 .top100-action:hover .action-top100-bacham,
-.top100-action:hover .action-top100-heart{
+.top100-action:hover .action-top100-heart {
     display: block;
-    /* opacity: 1 !important; */
+    opacity: 1 !important;
 }
 
-.top100-action .action-top100{
+.top100-action .action-top100 {
     position: absolute;
     color: #fff;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     display: none;
 }
 
-.top100-action .action-top100-heart{
+.top100-action .action-top100-heart {
     position: absolute;
     color: #fff;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 20%;
     display: none;
 }
 
-.top100-action .action-top100-bacham{
+.top100-action .action-top100-bacham {
     position: absolute;
     color: #fff;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     left: 80%;
     display: none;
 }
 
-.top100-action .action-top100-bacham .fas{
+.top100-action .action-top100-bacham .fas {
     font-size: 120%;
 }
 
-.top100-action .action-top100-heart .far{
+.top100-action .action-top100-heart .far {
     font-size: 160%;
 }
 
-.top100-action .action-top100 .far{
+.top100-action .action-top100 .far {
     font-size: 300%;
 }
 
-/*---------end Radio------- */
 
-/* top100 lich phat song */
+/*---------End content------- */
 
-/* end lich phat song */
-
-.container_body--layout_list{
+.container_body--layout_list {
     padding: 20px 0 0;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-/* ===========End Top100 =============== */
+
+/* ----------End Top100------- */
+
 
 /* -------------------- */
 
@@ -881,7 +990,7 @@ img, video {
 }
 
 .btn-play-all {
-    background-color: var( --color-purple);
+    background-color: var(--color-purple);
 }
 
 .playlist-body {
@@ -918,7 +1027,9 @@ img, video {
     display: inline-block;
 }
 
+
 /* +=========================SONG LIST======================== */
+
 .songs-list {
     flex: 1;
     overflow-y: auto;
@@ -991,9 +1102,7 @@ img, video {
     display: none;
 }
 
-.song-body {
-
-}
+.song-body {}
 
 .song-name {
     color: #dadada;
@@ -1017,12 +1126,12 @@ img, video {
     transform: translateY(-50%);
 }
 
-.time-total span{
+.time-total span {
     color: var(--text-secondary);
     font-size: 14px;
 }
 
-.song-option i{
+.song-option i {
     color: var(--text-secondary);
     font-size: 18px;
     padding: 5px;
@@ -1033,7 +1142,9 @@ img, video {
     color: var(--color-purple) !important;
 }
 
+
 /* =============================Control On Mobile======================================== */
+
 .control-on-mobile {
     position: fixed;
     top: 100%;
@@ -1088,8 +1199,6 @@ img, video {
     border-radius: 50%;
     border: 2px solid #dadada;
 }
-
-
 
 .mobile-icon-hide {
     color: #dadada;

@@ -79,7 +79,7 @@ a{
     display: none;
 }
 
-.nav-item.top100 {
+.nav-item.radio {
     color: var(--text-primary);
     background-color: var(--alpha-bg);
     border-left: 2px solid var(--color-purple);
@@ -622,7 +622,7 @@ a{
 .user-profile{
 }
 
-.z-top100-home{
+.z-radio-home{
     margin-left: calc(var(--padding-section)*-1);
     width: calc(100% + var(--padding-section)*2);
     margin-top: -100px;
@@ -630,31 +630,31 @@ a{
     position: relative;
 }
 
-.z-top100-home .bg{
+.z-radio-home .bg{
     position: absolute;
     left: 0;
     right: 0;
     top: 100px;
-    height: 300px;
+    height: 700px;
 }
 
-.z-top100-home .bg-blur{
-    background: url(https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.2/static/media/banner-100.33cafe6b.png) top/cover no-repeat;
+.z-radio-home .bg-blur{
+    background: url(https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.0/static/media/bg-chart.fd766403.jpg) top/cover no-repeat;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }
 
-.z-top100-home .bg-alpha{
+.z-radio-home .bg-alpha{
     opacity: .9;
     z-index: 0;
     background-image: linear-gradient(180deg, var(--layout-bg),var(--layout-bg));
 }
 
-.z-top100-home .bg-alpha-1{
+.z-radio-home .bg-alpha-1{
     background-image: linear-gradient(180deg,transparent,transparent 50%,var(--layout-bg));
 }
 
-.z-top100-home .bg-alpha, .z-top100-home .bg-alpha-1, .z-top100-home .bg-blur{
+.z-radio-home .bg-alpha, .z-radio-home .bg-alpha-1, .z-radio-home .bg-blur{
     position: absolute;
     top: 0;
     width: 100%;
@@ -665,34 +665,151 @@ a{
 /* ===========Begin Top100 =============== */
 
 .zm-section{
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 90px;
 }
 
+.all-radio{
+    display: flex;
+    position: absolute;
+}
+
+.discover-item{
+    padding-left: 10px;
+    width: 16.66666%;
+    height: 200px;
+    text-align: center;
+}
+
+.radio-anh{
+    position: relative;
+}
+
+.radio-anh:hover .radio-item{
+    cursor: pointer;
+    opacity: 0.7;
+    /* transform: scale(1.1); */
+}
+
+.radio-anh:hover .action-radio{
+    display: block;
+    opacity: 1 !important;
+}
+
+.radio-anh .action-radio:hover{
+    cursor: pointer;
+}
+
+.discover-item .radio-item{
+    border-radius: 50% ;
+    width: 80%;
+    overflow: hidden;
+}
+
+.radio-anh .action-radio{
+    position: absolute;
+    z-index: 4;
+    color: #fff;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: none;
+}
+
+.radio-anh .action-radio .far{
+    line-height: 32px;
+    font-size: 300%;
+    font-weight: 100;
+    width: 222px;
+    height: 32px;
+}
+
+.radio-anh .svg{
+    display: inline-block;
+    max-width: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    transform: rotate(-90deg);
+    left: 0;
+}
+
+.svg-circle-bg, .svg-circle{
+    fill: none;
+}
+
+.zm-section .host{
+    overflow: hidden;
+    border-radius: 50%;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    top: 80%;
+    left: 80%;
+    transform: translate(-55%,-55%);
+    z-index: 4;
+    /* height: 30%; */
+    width: 24%;
+}
+
+.zm-section .live{
+    overflow: hidden;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    top: 97%;
+    left: 51%;
+    transform: translate(-55%,-55%);
+    z-index: 3;
+    width: 18%;
+}
 
 img, video {
     height: auto;
     width: 100%;
 }
 
+.radio-name a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+}
+.radio-name{
+    margin-top: 6%;
+}
 
-/* -------------Top100-list----------- */
+.radio-name:hover a{
+    color: #7200a1;
+}
+
+.radio-view a{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+/* -------------Radio-list----------- */
 
 .container_body--layout{
     padding-top: 200px;
 }
 
-.top100-list-item-layout{
+.radio-list-item-layout{
     margin: 0 30px;
     margin-top: 30px;
 
 }
 
-.top100-list-item-layout-ingredient{
+.radio-list-item-layout-ingredient{
     padding: 0 12px;
 }
 
-.top100-name-content{
+.radio-name-content{
     margin-top: 4px;
     font-size: 14px;
     font-weight: 600;
@@ -705,29 +822,42 @@ img, video {
     display: block;
 }
 
-.top100-name-content:hover {
-	cursor: pointer;
-	color: #7200a1;
-}
-
 .discover{
     display: flex;
     width: 100%;
     height: 1%;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
-.content1 {
+.content1{
     align-items: center;
+    display: flex;
     text-align: left;
+    border-radius: 5px;
     padding-left: 22px;
-		font-size: 20px;
+}
+.content1 a:hover{
+   color: #7200a1;
+}
+.content1 a{
+    text-decoration: none;
+    font-size: 20px;
     color: #fff;
-    font-weight: 600;
+    margin-bottom: 16px;
+    font-weight: 700;
     text-transform: capitalize;
     display: block;
 }
 
-.top100-media-image {
+.radio-media-content{
+    padding: 0 0 16px;
+}
+
+.radio-media-left{
+    padding-left: 22px;
+    margin-right: 10px;
+}
+
+.radio-media-image {
     border-radius: 4px;
 
     /* display: block;
@@ -737,7 +867,7 @@ img, video {
     flex-shrink: 0; */
 }
 
-.top100-media-image figure {
+.radio-media-image figure {
     border-radius: 5px;
     overflow: hidden;
     
@@ -748,40 +878,58 @@ img, video {
     height: 50px;
 }
 
-.top100-list-item-layout-ingredient .imgtop100{
+.radio-media-content{
+
+}
+
+.radio-subtitle{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+    margin-top: 10px;
+}
+
+.radio-media-content .title{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 5px 0 0;
+    color: #fff;
+}
+
+.radio-list-item-layout-ingredient .imgradio{
     width: 100%;
     height: 100%;
     padding: 10px;
 }
-.imgtop100{
+.imgradio{
     border-radius: 20px;
 }
-.top100-list-item-layout-ingredient{
+.radio-list-item-layout-ingredient{
     width: 20%;
     margin-top: 10px;
 }
 
-.top100-action{
+.radio-action{
     position: relative;
     display: flex;
 }
 
-.top100-action:hover .imgtop100{
+.radio-action:hover .imgradio{
     cursor: pointer;
     opacity: 0.6;
 }
 
-.top100-action .action-top100{
+.radio-action .action-radio{
 }
 
-.top100-action:hover .action-top100,
-.top100-action:hover .action-top100-bacham,
-.top100-action:hover .action-top100-heart{
+.radio-action:hover .action-radio,
+.radio-action:hover .action-radio-bacham,
+.radio-action:hover .action-radio-heart{
     display: block;
-    /* opacity: 1 !important; */
+    opacity: 1 !important;
 }
 
-.top100-action .action-top100{
+.radio-action .action-radio{
     position: absolute;
     color: #fff;
     transform: translate(-50%,-50%);
@@ -790,7 +938,7 @@ img, video {
     display: none;
 }
 
-.top100-action .action-top100-heart{
+.radio-action .action-radio-heart{
     position: absolute;
     color: #fff;
     top: 50%;
@@ -799,7 +947,7 @@ img, video {
     display: none;
 }
 
-.top100-action .action-top100-bacham{
+.radio-action .action-radio-bacham{
     position: absolute;
     color: #fff;
     top: 50%;
@@ -808,21 +956,178 @@ img, video {
     display: none;
 }
 
-.top100-action .action-top100-bacham .fas{
+.radio-action .action-radio-bacham .fas{
     font-size: 120%;
 }
 
-.top100-action .action-top100-heart .far{
+.radio-action .action-radio-heart .far{
     font-size: 160%;
 }
 
-.top100-action .action-top100 .far{
+.radio-action .action-radio .far{
     font-size: 300%;
 }
 
 /*---------end Radio------- */
 
-/* top100 lich phat song */
+/* radio lich phat song */
+
+.lichphatsong{
+    margin: 40px 30px 0;
+    padding: 0 22px;
+}
+
+.lich-header{
+    border: 1px solid var(--alpha-bg);
+    border-top-right-radius: 6px ;
+    border-top-left-radius: 6px ;
+}
+
+.lich-nav{
+    display: flex;
+}
+
+.lich-header li{
+    display: inline-block;
+    width: 25%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    min-width: 120px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    letter-spacing: 1px;
+    line-height: 42px;
+    padding-left: 8px;
+}
+
+.lich-content{
+    display: flex;
+    border: 1px solid var(--alpha-bg);
+    position: relative;
+}
+
+.lich-content-left{
+    background-color: var(--alpha-bg);
+    width: 120px;
+    height: 364px;
+}
+
+.lich-content-left-anh{
+    margin-top: -2px;
+}
+
+.lich-anh-item{
+    margin: 20px 20px 40px;
+    position: relative;
+    width: 80px;
+    height: 100%;
+}
+
+.lich-anh-item img{
+    border-radius: 999px;
+}
+
+.lich-anh-item .lich-anh-item-icon{
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    display: none;
+}
+
+.lich-anh-item:hover img{
+    opacity: 0.6;
+}
+
+.lich-anh-item:hover .lich-anh-item-icon{
+    display: block;
+    cursor: pointer;
+}
+
+.lich-anh-item .lich-anh-item-icon .far{
+    line-height: 32px;
+    font-size: 300%;
+    font-weight: 100;
+}
+
+/* content-right */
+
+.lich-content-right{
+    width: 90%;
+    height: 100%;
+}
+
+.lich-content-right-item{
+    display: flex;
+    padding: 20px;
+    border-top: 1px solid var(--alpha-bg);
+}
+
+.lich-content-right-first,
+.lich-content-right-secon,
+.lich-content-right-three{
+    width: var(--percent)
+}
+
+.lich-content-right-child{
+    display: flex;
+}
+
+.lich-content-right-child img{
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 80px;
+    height: 80px;
+}
+
+.lich-content-right-text{
+    background-color: var(--alpha-bg);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.lich-content-right-text h3{
+    color: #fff;
+    padding-top: 16px;
+    padding-left: 10px;
+}
+
+.lich-content-right-text span{
+    color: #fff;
+    display: block;
+    padding-top: 4px;
+    padding-left: 10px;
+    opacity: 0.6;
+}
+
+.lichphatsong:hover .hoverrr{
+    display: block;
+    cursor: pointer;
+}
+
+.hoverrr{
+    width: 26px;
+    background-color: var(--text-secondaryy);
+    position: absolute;
+    top: 0%;
+    bottom: 0;
+    right: 0;
+    display: none;
+}
+
+.hoverrr .fa{
+    color: #fff;
+    padding-left: 10px;
+    padding-top: 165px;
+}
 
 /* end lich phat song */
 

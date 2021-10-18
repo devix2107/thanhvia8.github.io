@@ -635,11 +635,11 @@ a{
     left: 0;
     right: 0;
     top: 100px;
-    height: 300px;
+    height: 700px;
 }
 
 .z-top100-home .bg-blur{
-    background: url(https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.2/static/media/banner-100.33cafe6b.png) top/cover no-repeat;
+    background: url(https://zjs.zadn.vn/zmp3-desktop/releases/v1.4.0/static/media/bg-chart.fd766403.jpg) top/cover no-repeat;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
 }
@@ -665,7 +665,7 @@ a{
 /* ===========Begin Top100 =============== */
 
 .zm-section{
-    margin-top: 60px;
+    margin-top: 120px;
     margin-bottom: 90px;
 }
 
@@ -676,7 +676,7 @@ img, video {
 }
 
 
-/* -------------Top100-list----------- */
+/* -------------Radio-list----------- */
 
 .container_body--layout{
     padding-top: 200px;
@@ -703,11 +703,6 @@ img, video {
     overflow: hidden;
     text-overflow: ellipsis;
     display: block;
-}
-
-.top100-name-content:hover {
-	cursor: pointer;
-	color: #7200a1;
 }
 
 .discover{
@@ -778,7 +773,7 @@ img, video {
 .top100-action:hover .action-top100-bacham,
 .top100-action:hover .action-top100-heart{
     display: block;
-    /* opacity: 1 !important; */
+    opacity: 1 !important;
 }
 
 .top100-action .action-top100{
