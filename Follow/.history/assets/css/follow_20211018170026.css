@@ -92,7 +92,7 @@ a {
 }
 
 .nav-item:hover,
-.nav-item.follower {
+.nav-item.follow {
   color: var(--text-primary);
   background-color: var(--alpha-bg);
 }
@@ -666,7 +666,7 @@ a {
   border-radius: 16px;
 }
 
-.follow-header-list.follower {
+.follow-header-list.active {
   color: #fff;
   background-color: hsla(0, 0%, 100%, 0.3);
   border-radius: 16px;

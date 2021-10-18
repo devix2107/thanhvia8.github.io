@@ -666,7 +666,7 @@ a {
   border-radius: 16px;
 }
 
-.follow-header-list.follower {
+.follow-header-list.follow {
   color: #fff;
   background-color: hsla(0, 0%, 100%, 0.3);
   border-radius: 16px;
