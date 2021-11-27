@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  background-color: greenyellow;
+}
+
+.header-left {
+  width: 30%;
+}
+
+.header-left img {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: 8px 8px 8px 0px;
+}
+
+.header-center {
+  width: 40%;
+}
+
+.header-right {
+  width: 30%;
+  height: 60px;
+}
+
+.header-icon {
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
