@@ -19,7 +19,7 @@
 }
 
 .header-left img {
-  width: 200px;
+  /* width: 200px; */
   height: 60px;
   display: block;
   margin-left: 30px;
@@ -35,11 +35,9 @@
 }
 
 .header-icon {
-  /* height: 60px; */
-  display: flex;
-  justify-content: center;
+  height: 60px;
+  /* display: flex; */
   align-items: center;
-  line-height: 60px;
 }
 
 .header-icon i {
