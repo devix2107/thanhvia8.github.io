@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #anh {
+        width: 50%;
+        float: left;
+      }
+      button {
+        margin-bottom: 20px;
+        margin-left: 50px;
+      }
+      #yes {
+        width: 60px;
+        height: 30px;
+      }
+      #no2 {
+        display: none;
+      }
+      p {
+        color: red;
+        font-size: 30px;
+        display: none;
+      }
+      #anh2 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="di">
+      <h2>BẠN CÓ MUỐN THÔNG NỞ HOA ĐÍT THẰNG LỒN NÀY KHÔNG?</h2>
+      <button id="no" onclick="hide()">Không</button>
+      <button id="yes" onclick="show()">Có</button>
+      <button id="no2" onclick="hide2()">Không</button>
+    </div>
+
+    <img
+      id="anh"
+      src="https://scontent.fdad3-3.fna.fbcdn.net/v/t1.15752-9/270337252_2455069027962026_4932940399154850063_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=ae9488&_nc_ohc=vvRi07e0dMgAX-JmDzb&_nc_ht=scontent.fdad3-3.fna&oh=03_AVLWw1eUF4-VoOv0Lofk5r7pLLRzPnapgpJ2EQkArRDc_Q&oe=61FE54CB"
+      alt=""
+    />
+    <p id="pt">Địt mẹ biết ngay, thằng lồn tởm vãi</p>
+    <img
+      id="anh2"
+      src="https://i.bloganchoi.com/bloganchoi.com/wp-content/uploads/2020/10/meme-hai-huoc-moi-nhat-141.jpg?fit=620%2C20000&quality=95&ssl=1"
+      alt=""
+    />
+    <script>
+      function hide() {
+        document.getElementById("no2").style.display = "inline";
+        document.getElementById("no").style.display = "none";
+      }
+      function hide2() {
+        document.getElementById("no2").style.display = "none";
+        document.getElementById("no").style.display = "inline";
+      }
+      function show() {
+        document.getElementById("anh").style.display = "none";
+        document.getElementById("pt").style.display = "block";
+        document.getElementById("anh2").style.display = "block";
+        document.getElementById("di").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
